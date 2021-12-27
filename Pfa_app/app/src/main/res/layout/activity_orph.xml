@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.pfa_app.OrphActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Ajouter Orphelin"
+        android:textColor="@color/colorPrimaryDark1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nom"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Prenom"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toRightOf="@+id/editTextNom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNom" />
+
+    <EditText
+        android:id="@+id/editTextNomMere"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nom Mere"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrenom"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/editTextAge"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextCinMere"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Cin mere"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Telephone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomMere"
+        app:layout_constraintLeft_toRightOf="@+id/editTextCinMere"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNivScolaire"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Niveau Scolaire"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCinMere" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Adresse"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTel"
+        app:layout_constraintLeft_toRightOf="@+id/editTextNivScolaire"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.423" />
+
+    <Button
+        android:id="@+id/buttonChooserImage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Choisie un image"
+        android:background="#20224B"
+        android:textColor="#F2F9FA"
+        android:layout_marginTop="82dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNivScolaire"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_marginTop="81dp"
+        android:background="#20224B"
+        android:textColor="#F2F9FA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress"
+        app:layout_constraintLeft_toRightOf="@+id/buttonChooserImage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.423" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="97dp"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+</android.support.constraint.ConstraintLayout>

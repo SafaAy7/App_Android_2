@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images11"
+    tools:context="com.example.hp.pfa_app.AdminActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Admin Interface"
+        android:textStyle="bold"
+        android:textColor="#1B2280"
+        android:fontFamily="monospace"
+        android:textSize="30dp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonEnquataire"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+
+        android:text="Gérer Enqueteure "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/buttonBourse"
+        android:layout_alignLeft="@+id/buttonBourse"
+        android:layout_alignStart="@+id/buttonBourse" />
+
+
+    <Button
+        android:id="@+id/buttonBourse"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+
+        android:text="Gérer Bourse "
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_alignBaseline="@+id/buttonOrphelin"
+        android:layout_alignBottom="@+id/buttonOrphelin"
+        android:layout_alignLeft="@+id/buttonDonateur"
+        android:layout_alignStart="@+id/buttonDonateur" />
+
+    <Button
+        android:id="@+id/buttonDonateur"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+
+        android:text="Gérer Donateur "
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="151dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonOrphelin"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Gérer Orphelin"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnquataire"
+        android:layout_below="@+id/buttonEvenment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/buttonEvenment"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Gérer Evenment"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrphelin"
+        android:layout_alignBaseline="@+id/buttonDonateur"
+        android:layout_alignBottom="@+id/buttonDonateur"
+        android:layout_alignLeft="@+id/buttonOrphelin"
+        android:layout_alignStart="@+id/buttonOrphelin" />
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    style="@android:style/Widget.Button.Inset"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:text="Gérer Galerie"
+    android:id="@+id/buttonGalerie"
+    app:layout_constraintTop_toBottomOf="@+id/buttonOrphelin"
+    android:layout_alignBaseline="@+id/buttonEnquataire"
+    android:layout_alignBottom="@+id/buttonEnquataire"
+    android:layout_alignLeft="@+id/buttonOrphelin"
+    android:layout_alignStart="@+id/buttonOrphelin" />
+</RelativeLayout>

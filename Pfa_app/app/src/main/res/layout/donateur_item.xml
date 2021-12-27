@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+   android:background="#ffffff"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                 />
+
+            <TextView
+                android:id="@+id/textViewDonateurFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#800000"
+                android:text="Full name :" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact :"
+                android:textColor="#800000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#800000"
+                android:text="Email :" />
+
+            <TextView
+                android:id="@+id/textViewDonateurEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewDonateurPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#800000"
+                android:text="Phone :" />
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#800000"
+                android:text="Montant de Soutien :" />
+
+            <TextView
+                android:id="@+id/donateurMontantdesoutien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

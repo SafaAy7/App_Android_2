@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.pfa_app.AcueilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<android.support.constraint.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="168dp"
+        android:layout_height="61dp"
+        android:text="ASSOCIATION ERRAHMA"
+
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="310dp"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:text="est une association autonome
+        à caractère
+        caritatif pour le secours des
+        enfants orphelins créée en 2018 à Teboulba"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView40"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rahma"
+        tools:layout_editor_absoluteX="-46dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

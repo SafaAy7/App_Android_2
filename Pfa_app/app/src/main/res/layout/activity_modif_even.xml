@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.pfa_app.ModifierEvenement">
+
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="#f40a73"
+                android:text="Modifier Un Evenment :" />
+
+            <EditText
+                android:id="@+id/editTextNomEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nom :" />
+
+            <EditText
+                android:id="@+id/editTextDateEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Date :" />
+
+            <EditText
+                android:id="@+id/editTextAddressEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Address :" />
+
+            <EditText
+                android:id="@+id/editTextContactEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Contact :" />
+
+            <EditText
+                android:id="@+id/editTextDescriptionEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:scrollHorizontally="false"
+                android:minLines="4"
+                android:gravity="left|top"
+                android:lines="15"
+                android:inputType="textMultiLine"
+                android:hint="Description :"
+                />
+
+            <EditText
+                android:id="@+id/editTextResponsableEvenmentInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Responsable :" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonRetour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Retour" />
+
+                <Button
+                    android:id="@+id/buttonChooserImageEvInsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Choisir Image" />
+                <Button
+                    android:id="@+id/buttonSaveImageEvInsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enregistrer" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
